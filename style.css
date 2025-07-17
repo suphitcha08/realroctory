@@ -1,0 +1,123 @@
+body {
+  font-family: 'Prompt', sans-serif;
+  background-color: #000; /* ดำสนิท */
+  color: #f8f9fa;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #f54291;
+}
+
+#numberRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#numberRow h2 {
+  margin-bottom: 5px;
+  color: #a64eff;
+}
+
+.number-box {
+  font-size: 2em;
+  margin-top: 0;
+  padding: 15px;
+  border: 2px solid #a64eff; /* สีม่วง */
+  border-radius: 10px;
+  min-width: 100px;
+  background-color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #f54291;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.history {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.history h2 {
+  color: #00d4ff;
+}
+
+.history-item {
+  background-color: #1a1a1a;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  width: 300px;
+  border: 1px solid #333;
+}
+
+/* แอนิเมชันกระพริบตอนสุ่ม */
+.flashing {
+  animation: flash 0.2s infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    background-color: #1a1a1a;
+    color: #a64eff;
+  }
+  to {
+    background-color: #a64eff;
+    color: #000;
+  }
+}
+
+.history button {
+  margin-bottom: 20px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+
+.navbar {
+  background-color: #1a1a1a;
+  color: #a64eff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .nav-left {
+  font-weight: bold;
+}
+
+.navbar .nav-right a {
+  color: #f8f9fa;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-right a:hover {
+  color: #a64eff;
+}
+
+

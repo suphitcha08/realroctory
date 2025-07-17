@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เว็บออกรางวัล</title>
+  <link rel="stylesheet" href="style.css">
+  
+</nav>
+</head>
+<nav class="navbar">
+  <div class="nav-left">🎲 เว็บออกรางวัล</div>
+  <div class="nav-right">
+    <a href="#">หน้าหลัก</a>
+    <a href="#">ออกรางวัล</a>
+    <a href="#">เกี่ยวกับ</a>
+  </div>
+</nav>
+<body>
+  <h1>🎯 ดูเลขรางวัลที่ออก</h1>
+  <p id="today"></p>
+
+  <div id="numberRow">
+    <div>
+      <h2>2 ตัว</h2>
+      <div class="number-box" id="twoDigit">--</div>
+    </div>
+    <div>
+      <h2>3 ตัว</h2>
+      <div class="number-box" id="threeDigit">---</div>
+    </div>
+    <div>
+      <h2>4 ตัว</h2>
+      <div class="number-box" id="fourDigit">----</div>
+    </div>
+  </div>
+
+  <button onclick="drawNewRound()">ออกรางวัลรอบใหม่</button>
+
+  <div class="history">
+    <h2>📅 ประวัติการออกรางวัล</h2>
+    <button onclick="clearHistory()">🗑 ลบประวัติทั้งหมด</button>
+    <div id="historyList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<footer style="background-color: #111; color: #ccc; text-align: center; padding: 20px 10px; font-size: 14px; margin-top: 50px; border-top: 1px solid #333;">
+  <p>© 2025 เว็บออกรางวัล | พัฒนาโดย 🎲 ดี</p>
+  <p>
+    <a href="/privacy" style="color: #888; text-decoration: none; margin: 0 10px;">นโยบายความเป็นส่วนตัว</a> |
+    <a href="/contact" style="color: #888; text-decoration: none; margin: 0 10px;">ติดต่อเรา</a>
+  </p>
+</footer>
+
+</html>
