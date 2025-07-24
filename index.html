@@ -39,18 +39,31 @@
   <button onclick="drawNewRound()">ออกรางวัลรอบใหม่</button>
   
 
-  <div class="lottery-section">
-  <h2>ขายสลากรางวัลเลขล็อก</h2>
-  <p>เลือกรางวัลที่ต้องการสุ่ม:</p>
+  <div class="container">
+  <h2>ระบบกรอกซื้อเลขสลาก</h2>
 
-  <div class="btn-group">
-    <button onclick="generateLottery(2)">รางวัล 2 ตัว</button>
-    <button onclick="generateLottery(3)">รางวัล 3 ตัว</button>
-    <button onclick="generateLottery(4)">รางวัล 4 ตัว</button>
+  <!-- 🎯 ซื้อเลข 2 ตัว -->
+  <div class="lotto-box">
+    <h3>ซื้อรางวัล 2 ตัว</h3>
+    <input type="text" id="buy2" maxlength="2" placeholder="ใส่เลข 2 หลัก">
+    <button onclick="buy('2')">ซื้อ</button>
   </div>
 
-  <div class="result" id="lotteryResult">🔒 เลขจะถูกล็อกไว้</div>
+  <!-- 🎯 ซื้อเลข 3 ตัว -->
+  <div class="lotto-box">
+    <h3>ซื้อรางวัล 3 ตัว</h3>
+    <input type="text" id="buy3" maxlength="3" placeholder="ใส่เลข 3 หลัก">
+    <button onclick="buy('3')">ซื้อ</button>
+  </div>
+
+  <!-- 🎯 ซื้อเลข 4 ตัว -->
+  <div class="lotto-box">
+    <h3>ซื้อรางวัล 4 ตัว</h3>
+    <input type="text" id="buy4" maxlength="4" placeholder="ใส่เลข 4 หลัก">
+    <button onclick="buy('4')">ซื้อ</button>
+  </div>
 </div>
+
 
   <div class="history">
     <h2>📅 ประวัติการออกรางวัล</h2>
