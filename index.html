@@ -19,6 +19,26 @@
   <h1>🎯 ดูเลขรางวัลที่ออก</h1>
   <p id="today"></p>
 
+  <div id="register-section" class="register-form">
+  <h2>สมัครสมาชิก</h2>
+  <form id="signupForm">
+    <label for="name">ชื่อ:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">อีเมล:</label>
+    <input type="email" id="email" name="email" required />
+
+    <button type="submit">สมัคร</button>
+  </form>
+</div>
+
+<!-- ปุ่มลงชื่อออก (ซ่อนตอนเริ่มต้น) -->
+<div id="logout-section" style="display: none; text-align: center; margin-top: 2rem;">
+  <h3>คุณได้สมัครสมาชิกแล้ว</h3>
+  <button id="logoutBtn">ลงชื่อออก</button>
+</div>
+
+
   <div id="numberRow">
     <div>
       <h2>2 ตัว</h2>
@@ -35,19 +55,7 @@
   </div>
 
   <button onclick="drawNewRound()">ออกรางวัลรอบใหม่</button>
-  <div class="register-form">
-  <h2>สมัครสมาชิก</h2>
-  <form id="signupForm">
-    <label for="name">ชื่อ:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">อีเมล:</label>
-    <input type="email" id="email" name="email" required>
-
-    <button type="submit">สมัคร</button>
-  </form>
-</div>
-
+  
   <div class="history">
     <h2>📅 ประวัติการออกรางวัล</h2>
     <button onclick="clearHistory()">🗑 ลบประวัติทั้งหมด</button>

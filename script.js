@@ -114,3 +114,27 @@ function clearHistory() {
     alert("ลบประวัติเรียบร้อยแล้ว");
   }
 }
+
+const form = document.getElementById('signupForm');
+const registerSection = document.getElementById('register-section');
+const logoutSection = document.getElementById('logout-section');
+const logoutBtn = document.getElementById('logoutBtn');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  alert("สมัครสมาชิกสำเร็จ! ขอบคุณคุณ " + name);
+
+  // ซ่อนฟอร์มสมัคร / แสดงปุ่มลงชื่อออก
+  registerSection.style.display = "none";
+  logoutSection.style.display = "block";
+
+  form.reset();
+});
+
+// เมื่อคลิก "ลงชื่อออก"
+logoutBtn.addEventListener('click', function () {
+  // ซ่อนปุ่มออก / แสดงฟอร์มอีกครั้ง
+  logoutSection.style.display = "none";
+  registerSection.style.display = "block";
+});
