@@ -124,7 +124,7 @@ button {
   max-width: 500px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #fff;
+  background: #050030;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
@@ -138,6 +138,7 @@ input[type="text"] {
   padding: 10px;
   font-size: 1.2rem;
   width: 150px;
+
   text-align: center;
   margin-top: 0.5rem;
 }
@@ -148,7 +149,7 @@ button {
   margin-top: 0.5rem;
   border: none;
   border-radius: 5px;
-  background-color: #28a745;
+  background-color: #384aee;
   color: white;
   cursor: pointer;
 }
