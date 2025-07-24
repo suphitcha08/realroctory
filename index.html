@@ -19,8 +19,6 @@
   <h1>🎯 ดูเลขรางวัลที่ออก</h1>
   <p id="today"></p>
 
- 
-
 
 
   <div id="numberRow">
@@ -40,6 +38,20 @@
 
   <button onclick="drawNewRound()">ออกรางวัลรอบใหม่</button>
   
+
+  <div class="lottery-section">
+  <h2>ขายสลากรางวัลเลขล็อก</h2>
+  <p>เลือกรางวัลที่ต้องการสุ่ม:</p>
+
+  <div class="btn-group">
+    <button onclick="generateLottery(2)">รางวัล 2 ตัว</button>
+    <button onclick="generateLottery(3)">รางวัล 3 ตัว</button>
+    <button onclick="generateLottery(4)">รางวัล 4 ตัว</button>
+  </div>
+
+  <div class="result" id="lotteryResult">🔒 เลขจะถูกล็อกไว้</div>
+</div>
+
   <div class="history">
     <h2>📅 ประวัติการออกรางวัล</h2>
     <button onclick="clearHistory()">🗑 ลบประวัติทั้งหมด</button>

@@ -115,3 +115,10 @@ function clearHistory() {
   }
 }
 
+function generateLottery(digits) {
+  let result = "";
+  for (let i = 0; i < digits; i++) {
+    result += Math.floor(Math.random() * 10);
+  }
+  document.getElementById("lotteryResult").innerText = `🎉 เลขที่ออก: ${result}`;
+}
