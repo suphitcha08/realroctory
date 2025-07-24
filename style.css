@@ -138,9 +138,8 @@ button {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.register-form button,
-#logoutBtn {
-  background-color: #007bff;
+.register-form button {
+  background-color: #28a745;
   color: white;
   border: none;
   padding: 10px;
@@ -148,7 +147,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-.register-form button:hover,
-#logoutBtn:hover {
-  background-color: #0056b3;
+.register-form button:hover {
+  background-color: #218838;
 }
